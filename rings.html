@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ring Collection</title>
+    <link rel="stylesheet" href="CDN Files/Bootstrap 5/css/bootstrap.min.css" />
+    <script src="CDN Files/jquery-3.7.1.js"></script>
+    <script src="CDN Files/Bootstrap 5/js/bootstrap.min.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        color: #fff;
+        padding: 20px;
+        margin: 0;
+        background-color: #d9b77a;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      }
+      .back-home-btn {
+        display: inline-block;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        background-color: #f0c14b;
+        color: #111;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+      .back-home-btn:hover {
+        background-color: #ffd700;
+        transform: scale(1.05);
+      }
+      .header {
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 1px solid #444;
+      }
+      .header h1 {
+        font-size: 3rem;
+        letter-spacing: 2px;
+        font-family: "Playfair Display", serif;
+        margin-bottom: 20px;
+      }
+      .ring-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 40px;
+      }
+      .ring-item {
+        background-color: #111;
+        border: 1px solid #444;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+      }
+      .ring-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 30px rgba(255, 193, 7, 0.5);
+        color: #fff;
+      }
+      .ring-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-bottom: 3px solid #f0c14b;
+      }
+      .ring-details {
+        padding: 15px;
+      }
+      .ring-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .ring-price {
+        color: #f0c14b;
+        font-size: 1.2rem;
+        margin-top: 10px;
+      }
+      .footer {
+        text-align: center;
+        padding: 20px 0;
+        border-top: 1px solid #444;
+        margin-top: 40px;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="main_page.html" class="back-home-btn">← Back to Home</a>
+
+    <div class="container">
+      <div class="header">
+        <h1>Ring Collection</h1>
+        <p>
+          Discover our exclusive selection of rings, crafted for elegance and
+          style.
+        </p>
+      </div>
+
+      <div class="ring-grid">
+        <a href="ring1.html" class="ring-item">
+          <img
+            src="https://www.giva.co/cdn/shop/files/R054_1_b37f3b0b-0f56-42c8-954a-98ee4a1ab53b.jpg?v=1715601912&width=713"
+            alt="Gold Diamond Ring"
+            class="ring-image"
+          />
+          <div class="ring-details">
+            <div class="ring-name">Silver Zircon Layered Ring</div>
+            <div class="ring-price">₹59999</div>
+          </div>
+        </a>
+        <a href="ring2.html" class="ring-item">
+          <img
+            src="https://kinclimg1.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BISP0419R11_YAA18DIG6XXXXXXXX_ABCD00-PICS-00001-1024-71101.png"
+            alt="Silver Band Ring"
+            class="ring-image"
+          />
+          <div class="ring-details">
+            <div class="ring-name">The Harper Ring</div>
+            <div class="ring-price">₹19999</div>
+          </div>
+        </a>
+        <a href="ring3.html" class="ring-item">
+          <img
+            src="https://www.giva.co/cdn/shop/files/R070_1.jpg?v=1711630779&width=713"
+            alt="Platinum Engagement Ring"
+            class="ring-image"
+          />
+          <div class="ring-details">
+            <div class="ring-name">Silver Solitaire Grace Ring</div>
+            <div class="ring-price">₹129999</div>
+          </div>
+        </a>
+        <div class="ring-item">
+          <img
+            src="https://kinclimg9.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BIDG0319R180_YAA18DIG6XXXXXXXX_ABCD00-PICS-00001-1024-66194.png"
+            alt="Rose Gold Promise Ring"
+            class="ring-image"
+          />
+          <div class="ring-details">
+            <div class="ring-name">Rose Gold Promise Ring</div>
+            <div class="ring-price">₹34999</div>
+          </div>
+        </div>
+        <div class="ring-item">
+          <img
+            src="https://www.giva.co/cdn/shop/files/R100_1.jpg?v=1694153046&width=713"
+            alt="Black Titanium Ring"
+            class="ring-image"
+          />
+          <div class="ring-details">
+            <div class="ring-name">Black Titanium Ring</div>
+            <div class="ring-price">₹29999</div>
+          </div>
+        </div>
+        <div class="ring-item">
+          <img
+            src="https://www.giva.co/cdn/shop/files/R0744_1.jpg?v=1712235519&width=713"
+            alt="Vintage Opal Ring"
+            class="ring-image"
+          />
+          <div class="ring-details">
+            <div class="ring-name">Vintage Opal Ring</div>
+            <div class="ring-price">₹47999</div>
+          </div>
+        </div>
+        <div class="ring-item">
+          <img
+            src="https://kinclimg8.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BIJP0880R344_WAA18DIG4XXXXXXXX_ABCD00-PICS-00001-1024-76459.png"
+            alt="White Gold Halo Ring"
+            class="ring-image"
+          />
+          <div class="ring-details">
+            <div class="ring-name">White Gold Halo Ring</div>
+            <div class="ring-price">₹89999</div>
+          </div>
+        </div>
+        <div class="ring-item">
+          <img
+            src="https://kinclimg8.bluestone.com/f_webp,c_scale,w_1024,b_rgb:f0f0f0/giproduct/BISR0885R24_WAA18DIG4XXXXXXXX_ABCD00-PICS-00001-1024-68907.png"
+            alt="Classic Men's Ring"
+            class="ring-image"
+          />
+          <div class="ring-details">
+            <div class="ring-name">Classic Men's Ring</div>
+            <div class="ring-price">₹39999</div>
+          </div>
+        </div>
+        <div class="ring-item">
+          <img
+            src="https://www.giva.co/cdn/shop/files/R01488_1.jpg?v=1709819663&width=713"
+            alt="Emerald Cut Ring"
+            class="ring-image"
+          />
+          <div class="ring-details">
+            <div class="ring-name">Emerald Cut Ring</div>
+            <div class="ring-price">₹74999</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>&copy; 2024 Raero International CZ. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jewelry Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #d9b77a;
+      }
+      .navbar {
+        background-color: #ffffff;
+        padding: 10px 50px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        height: 120px;
+      }
+      .container-fluid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar-nav {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+      }
+      .navbar-logo {
+        flex-grow: 1;
+        text-align: center;
+      }
+      .navbar-brand img {
+        width: 80px;
+        height: 80px;
+        display: inline-block;
+        margin: 0;
+        vertical-align: middle;
+      }
+      .navbar-nav li {
+        list-style: none;
+      }
+      .navbar-nav a {
+        color: black;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+      .navbar-nav a:hover {
+        color: red;
+      }
+      .banner_image {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .bottom {
+        height: auto;
+        width: 100%;
+        background-color: #d9b77a;
+        position: relative;
+        padding-bottom: 50px;
+      }
+      .handwritten {
+        font-family: "Great Vibes", cursive;
+        text-align: center;
+        font-size: 70px;
+        margin: 20px 0;
+        color: black;
+      }
+      .handwritten1 {
+        font-family: "Great Vibes", cursive;
+        text-align: center;
+        font-size: 40px;
+        margin: 20px 0;
+        color: black;
+      }
+      .catchy-font {
+        font-family: "Lobster", cursive;
+        text-align: center;
+        font-size: 60px;
+        margin: 20px 0;
+        color: black;
+      }
+      .jewelry-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 50px;
+      }
+      .necklase-container {
+        flex: 1;
+      }
+      .side-images {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .necklase {
+        height: 624px;
+        width: 900px;
+        display: block;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+      }
+      .Bracelet,
+      .rings {
+        width: 652px;
+        height: 300px;
+        display: block;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+      }
+      .small-images {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 80px;
+      }
+      .image-item {
+        text-align: center;
+      }
+      .small-images img {
+        width: 150px;
+        height: auto;
+      }
+      .small-images p:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li><a href="rings.html">RINGS</a></li>
+          <li><a href="new.html">BRACELET</a></li>
+          <li><a href="JEWELRY/necklaces.html">NECKLACE</a></li>
+          <li><a href="brandstories.html">BRAND STORY</a></li>
+          <li class="navbar-logo">
+            <a class="navbar-brand" href="main_page.html">
+              <img src="logo.PNG" alt="Logo" />
+            </a>
+          </li>
+          <li><a href="aboutus.html">ABOUT US</a></li>
+          <li><a href="collab.html">COLLABORATORS</a></li>
+          <li><a href="sign_up/sign_up.html">SIGN UP</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="top">
+      <img class="banner_image" src="banner.png" alt="Banner Image" />
+    </div>
+    <br /><br />
+    <div class="bottom">
+      <h1 class="handwritten">Straight out of our sketchbook</h1>
+      <br /><br /><br />
+      <div class="jewelry-container">
+        <div class="necklase-container">
+          <img class="necklase" src="Necklase.png" alt="Necklace Image" />
+        </div>
+        <div class="side-images">
+          <div class="Bracelet-container">
+            <img class="Bracelet" src="Bracelet.png" alt="Bracelet Image" />
+          </div>
+          <div class="rings-container">
+            <img class="rings" src="rings.png" alt="Rings Image" />
+          </div>
+        </div>
+      </div>
+      <br /><br /><br />
+      <h1 class="catchy-font">Choose what suits you</h1>
+      <br /><br /><br />
+      <div class="small-images">
+        <div class="image-item">
+          <img src="Flora_Fauna.webp" alt="Flora Fauna" />
+          <p>Flora Fauna</p>
+        </div>
+        <div class="image-item">
+          <img src="Haute_Diamonds.webp" alt="Haute Diamonds" />
+          <p>Haute Diamonds</p>
+        </div>
+        <div class="image-item">
+          <img src="Closet_Favourites.webp" alt="Closet Favourites" />
+          <p>Closet Favourites</p>
+        </div>
+        <div class="image-item">
+          <img src="Pocket_Friendly.webp" alt="Pocket Friendly" />
+          <p>Pocket Friendly</p>
+        </div>
+        <div class="image-item">
+          <img src="Oh_Love.webp" alt="Oh Love" />
+          <p>Oh Love</p>
+        </div>
+        <div class="image-item">
+          <img src="Giftables (1).webp" alt="Giftables" />
+          <p>Giftables</p>
+        </div>
+        <div class="image-item">
+          <img src="Traditions.webp" alt="Traditions" />
+          <p>Traditions</p>
+        </div>
+      </div>
+    </div>
+    <hr style="height: 3px; border-width: 0; background-color: black" />
+    <center>
+      <h1 class="handwritten1">Made by</h1>
+      <h1 class="handwritten1">Kalash- C005</h1>
+      <h1 class="handwritten1">Ebrahim- C009</h1>
+      <h1 class="handwritten1">Shravni- C007</h1>
+    </center>
+    <script>
+      $(document).ready(function () {
+        $(".Bracelet, .necklase, .rings").hover(
+          function () {
+            $(this).css({
+              "box-shadow": "0px 10px 10px rgba(0, 0, 0, 0.5)",
+              transform: "scale(1.05)",
+              transition: "transform 0.3s ease",
+            });
+          },
+          function () {
+            $(this).css({
+              "box-shadow": "none",
+              transform: "scale(1)",
+              transition: "transform 0.3s ease",
+            });
+          }
+        );
+      });
+    </script>
+  </body>
+</html>

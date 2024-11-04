@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Collaborations</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        background: url("https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3")
+          no-repeat center center fixed;
+        background-size: cover;
+        color: #3e2723;
+        padding: 40px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+      }
+      .heading {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: #3e2723;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 30px;
+        letter-spacing: 2px;
+      }
+      .subheading {
+        font-size: 1.5rem;
+        color: #5d4037;
+        margin-bottom: 50px;
+        font-style: italic;
+      }
+      .tile-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        max-width: 1200px;
+      }
+      .tile {
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+      }
+      .tile img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .tile.small {
+        width: 250px;
+        height: 250px;
+      }
+      .tile.medium {
+        width: 350px;
+        height: 350px;
+      }
+      .tile.large {
+        width: 450px;
+        height: 450px;
+      }
+      .background-design {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.2);
+        z-index: -1;
+      }
+
+      .back-home-btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 24px;
+        background-color: #f0c14b;
+        color: #111;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: background-color 0.3s, transform 0.3s;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .back-home-btn:hover {
+        background-color: #ffd700;
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-design"></div>
+    <div class="heading">Our Collaborations</div>
+    <div class="subheading">Building connections that last</div>
+    <div class="tile-container">
+      <div class="tile small">
+        <img
+          src="https://play-lh.googleusercontent.com/eWSOT4_BH09hrrpESPmCqOCsUw6lxDajY4TUmQpSkFZsksgOX2sLowdG4PuUt83bFw"
+          alt="Collaboration 1"
+        />
+      </div>
+      <div class="tile medium">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7K2XnBQ1nuwmjDcSUIupA_q8kwTIneM3ElA&s"
+          alt="Collaboration 2"
+        />
+      </div>
+      <div class="tile large">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd3KaEubRDvxaaLBYMuMM-bR7WnS1HiBV8GA&s"
+          alt="Collaboration 3"
+        />
+      </div>
+      <div class="tile small">
+        <img
+          src="https://cdn.logojoy.com/wp-content/uploads/2018/07/30124038/jewelry1.png"
+          alt="Collaboration 4"
+        />
+      </div>
+      <div class="tile medium">
+        <img
+          src="https://cdn.dribbble.com/users/5706294/screenshots/15300395/media/c78b04d62d496be028e9333d16b80edb.jpg?resize=400x0"
+          alt="Collaboration 5"
+        />
+      </div>
+    </div>
+    <br />
+    <a href="main_page.html" class="back-home-btn">← Back to Home</a>
+  </body>
+</html>
